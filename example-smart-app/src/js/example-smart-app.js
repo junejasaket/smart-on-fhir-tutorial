@@ -55,10 +55,7 @@
   window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
-    $('#fname').html(p.fname);
-    $('#lname').html(p.lname);
-    $('#gender').html(p.gender);
-    $('#birthdate').html(p.birthdate);
+    $('#patient-resource-content').html(JSON.stringify(p));
   };
 
 })(window);
