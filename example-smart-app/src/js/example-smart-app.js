@@ -30,7 +30,7 @@
   window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
-    $('#patient-resource-content').html(JSON.stringify(p));
+    $('#patient-resource-content').html(JSON.stringify(p, null, 4));
   };
 
 })(window);
